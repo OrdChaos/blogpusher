@@ -2,8 +2,8 @@
 A tool to help you push your blog or any other git repo by one command.
 
 ### How to use?
-You just need to move blogpusher.exe to your git repo and add "blogpusher.exe" to .gitignore.
-Then, use "blogpusher xxxxxx" instead of:
+You just need to move blogpusher.exe to your git repo and add `blogpusher.*` to .gitignore.
+Then, use `blogpusher xxxxxx` instead of:
 ```
 git pull origin master
 git add .
