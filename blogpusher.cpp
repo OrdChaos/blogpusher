@@ -3,10 +3,13 @@ using namespace std;
 
 int main(int argc, char** argv){
     string commit;
-    for(int i = 1; i < argc; i++){
-        commit += argv[i];
-        if(i != argc - 1){
-            commit += " ";
+    if(argc == 1) commit = "Update";
+    else {
+        for(int i = 1; i < argc; i++) {
+            commit += argv[i];
+            if(i != argc - 1){
+                commit += " ";
+            }
         }
     }
     string commitInput = "git commit -m\"" + commit + "\"";
